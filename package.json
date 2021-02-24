@@ -1,8 +1,8 @@
 {
   "name": "convert-to-ranges",
   "version": "1.0.0",
-  "private":false,
-  "description": "",
+  "private": false,
+  "description": "Just convert array numbers to ranges string",
   "main": "index.js",
   "engines": {
     "node": ">=10.0"
@@ -22,5 +22,17 @@
   "jest": {
     "collectCoverage": false,
     "testEnvironment": "node"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eeeeeenjoy/convert-to-ranges.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Eeeeeenjoy/convert-to-ranges/issues"
+  },
+  "homepage": "https://github.com/Eeeeeenjoy/convert-to-ranges#readme"
 }
