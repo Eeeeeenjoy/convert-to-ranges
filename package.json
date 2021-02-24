@@ -9,10 +9,12 @@
   },
   "devDependencies": {
     "jest": "^26.6.3",
-    "standard": "^16.0.3"
+    "standard": "^16.0.3",
+    "husky": "^3.0.5"
   },
   "scripts": {
     "test": "jest tests/ -b",
+    "test:ci": "npm run lint && npm run test",
     "lint": "standard src/*.js src/**/*.js",
     "lint:fix": "standard --fix src/*.js src/**/*.js"
   },
@@ -34,5 +36,11 @@
   "bugs": {
     "url": "https://github.com/Eeeeeenjoy/convert-to-ranges/issues"
   },
-  "homepage": "https://github.com/Eeeeeenjoy/convert-to-ranges#readme"
+  "homepage": "https://github.com/Eeeeeenjoy/convert-to-ranges#readme",
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run test",
+      "pre-commit": "npm run lint:fix && git add -u"
+    }
+  }
 }
