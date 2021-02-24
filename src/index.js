@@ -32,4 +32,4 @@ async function convertToRange (arrItems) {
   return result.join()
 }
 
-export default convertToRange
+module.exports = convertToRange

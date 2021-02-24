@@ -1,4 +1,4 @@
-import { convertToRange } from '../src/index'
+const convertToRange = require('../src/index')
 
 function range(start, stop, step) {
   var a = [start], b = start;
