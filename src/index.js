@@ -11,13 +11,12 @@ async function convertToRange (arrItems) {
   const result = []
 
   for (let i = 1; i < arrNum.length; i++) { 
-    if (arr[i] - ranges[lastIndex][1] === 1) {
+    if (arrNum[i] - ranges[lastIndex][1] === 1) {
       ranges[lastIndex][1] = arrNum[i]
     } else {
       ranges[++lastIndex] = [arrNum[i], arrNum[i]]
     }
   }
-  console.log(ranges)
   ranges.map(
     rangeNum => { 
       if (rangeNum.length === 1) {
