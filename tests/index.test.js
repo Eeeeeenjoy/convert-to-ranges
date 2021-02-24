@@ -1,4 +1,4 @@
-import convertToRange from '../src/index';
+import { convertToRange } from '../src/index'
 
 function range(start, stop, step) {
   var a = [start], b = start;
