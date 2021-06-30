@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": false,
   "description": "Just convert array numbers to ranges string",
-  "main": "index.js",
+  "main": "src/index.js",
   "engines": {
     "node": ">=10.0"
   },
@@ -22,8 +22,11 @@
   "author": "",
   "license": "ISC",
   "jest": {
-    "collectCoverage": false,
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
   },
   "directories": {
     "test": "tests"
@@ -40,7 +43,7 @@
   "husky": {
     "hooks": {
       "pre-push": "npm run test",
-      "pre-commit": "npm run lint:fix && git add -u"
+      "pre-commit": "npm run lint"
     }
   }
 }
